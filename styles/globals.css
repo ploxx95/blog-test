@@ -1,16 +1,43 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@tailwind base;
+
+
+@tailwind components;
+
+
+
+@layer base{
+    @font-face {
+        font-family: Gilroy;
+        font-weight: 700;
+        src: local('Gilroy'),url("/public/fonts/Gilroy/Gilroy-Light.ttf") format("ttf");
+    }
+
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+
+@layer components{
+    .main-container{
+        width: calc(100% - 40px);
+        max-width: 1366px;
+        margin-left: auto;
+        margin-right: auto;
+        @apply container px-5  md:px-8 lg:px-24
+    }
 }
 
-* {
-  box-sizing: border-box;
-}
+
+@tailwind utilities;
+
+@layer utilities {
+    @variants responsive {
+      .scroll-snap-none {
+        scroll-snap-type: none;
+      }
+      .scroll-snap-x {
+        scroll-snap-type: x;
+      }
+      .scroll-snap-y {
+        scroll-snap-type: y;
+      }
+    }
+  }
