@@ -16,12 +16,13 @@
 
 
 @layer components{
-    .main-container{
-        width: calc(100% - 40px);
+    .mix-container{
         max-width: 1366px;
-        margin-left: auto;
-        margin-right: auto;
-        @apply container px-5  md:px-8 lg:px-24
+        @apply width-calc-sm md:width-calc-md lg:width-calc-lg
+    }
+
+    .BoxColor-sm{
+      @apply w-72
     }
 }
 
@@ -30,14 +31,26 @@
 
 @layer utilities {
     @variants responsive {
-      .scroll-snap-none {
-        scroll-snap-type: none;
-      }
-      .scroll-snap-x {
-        scroll-snap-type: x;
-      }
-      .scroll-snap-y {
-        scroll-snap-type: y;
-      }
+      /* CONTAINER MIX CONTAINER */
+      .width-calc-sm{
+        width: calc(100% - 40px);
+        @apply mx-auto
+    }
+      .width-calc-md{
+        width: calc(100% - 64px);
+        @apply mx-auto
+    }
+      .width-calc-lg{
+        width: calc(100% - 184px);
+        @apply mx-auto
+    }
+      .width-calc-xl{
+        width: calc(100% - 288px);
+        @apply mx-auto
+  }
+      
+
+      
+
     }
   }
