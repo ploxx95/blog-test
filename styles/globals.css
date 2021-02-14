@@ -9,6 +9,7 @@
     @font-face {
         font-family: Gilroy;
         font-weight: 700;
+        font-style: normal;
         src: local('Gilroy'),url("/public/fonts/Gilroy/Gilroy-Light.ttf") format("ttf");
     }
 
@@ -24,6 +25,10 @@
     .BoxColor-sm{
       @apply w-72
     }
+    .h1-mobile{
+
+    }
+
 }
 
 
