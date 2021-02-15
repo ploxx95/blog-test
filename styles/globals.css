@@ -1,20 +1,14 @@
+
 @tailwind base;
-
-
+/* @layer base{
+  @font-face {
+      font-family: Gilroy;
+      font-weight: 700;
+      font-style: normal;
+      src:url("/public/fonts/Gilroy-Bold.ttf") format("ttf");
+  }
+} */
 @tailwind components;
-
-
-
-@layer base{
-    @font-face {
-        font-family: Gilroy;
-        font-weight: 700;
-        font-style: normal;
-        src: local('Gilroy'),url("/public/fonts/Gilroy/Gilroy-Light.ttf") format("ttf");
-    }
-
-}
-
 
 @layer components{
     .mix-container{

@@ -4,7 +4,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily:{
-        'gilroy': ['Gilroy',"ui-sans-serif"]
+        'gilroy': ['Gilroy',"ui-sans-serif"],
+        
       },
       colors: {
         'blue-hard': '#070E27',
